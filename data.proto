@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+message Text{
+    string data = 1;
+}
+
+service DataHash{
+    rpc greeting(Text) returns (Text);
+}
